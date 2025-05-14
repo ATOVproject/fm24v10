@@ -1,11 +1,11 @@
 [![crates.io](https://img.shields.io/crates/d/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
 [![crates.io](https://img.shields.io/crates/v/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
 [![Documentation](https://docs.rs/embedded-driver/badge.svg)](https://docs.rs/embedded-driver)
-![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.63+-blue.svg)
+![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.85+-blue.svg)
 
-# `embedded-driver-template`
+# `fm24v10`
 
->  A rust-embedded driver template to get you started
+> fm24v10 f-ram embedded-hal-async driver
 
 ## [API reference]
 
@@ -13,7 +13,7 @@
 
 ## Minimum Supported Rust Version (MSRV)
 
-This crate is guaranteed to compile on stable Rust 1.63 and up. It *might* compile with older versions but that may change in any new patch release.
+This crate is guaranteed to compile on stable Rust 1.85.0 and up. It *might* compile with older versions but that may change in any new patch release.
 
 ## License
 
