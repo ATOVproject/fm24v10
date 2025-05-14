@@ -1,20 +1,24 @@
 [package]
-name = "embedded-driver-template"
-description = "A rust-embedded driver template"
+name = "fm24v10"
+description = "fm24v10 f-ram embedded-hal-async driver"
 categories = ["embedded", "hardware-support", "no-std"]
-documentation = "https://docs.rs/embedded-driver-template"
+documentation = "https://docs.rs/fm24v10"
 authors = ["Chris Maniewski"]
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/atovproject/embedded-driver-template"
+repository = "https://github.com/atovproject/fm24v10"
 
 [dependencies]
 embedded-hal-async = "1.0"
+embedded-storage-async = "0.4"
+
 
 [dev-dependencies]
-embedded-hal-mock = { version="0.11", features = ["eh1", "embedded-hal-async"] }
+embedded-hal-mock = { version = "0.11", features = [
+  "eh1",
+  "embedded-hal-async",
+] }
 tokio = { version = "1.38", features = ["rt", "macros"] }
 critical-section = { version = "1.1", features = ["std"] }
-
