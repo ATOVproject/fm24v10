@@ -1,6 +1,5 @@
-[![crates.io](https://img.shields.io/crates/d/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
-[![crates.io](https://img.shields.io/crates/v/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
-[![Documentation](https://docs.rs/embedded-driver/badge.svg)](https://docs.rs/embedded-driver)
+[![crates.io](https://img.shields.io/crates/d/embedded-driver.svg)](https://crates.io/crates/fm24v10 )
+[![Documentation](https://docs.rs/embedded-driver/badge.svg)](https://docs.rs/fm24v10 )
 ![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.85+-blue.svg)
 
 # `fm24v10`
@@ -9,7 +8,7 @@
 
 ## [API reference]
 
-[API reference]: https://docs.rs/embedded-driver
+[API reference]: https://docs.rs/fm24v10 
 
 ## Minimum Supported Rust Version (MSRV)
 

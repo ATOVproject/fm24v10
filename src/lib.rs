@@ -129,9 +129,7 @@ where
         if data.is_empty() {
             return Ok(());
         }
-        if offset >= CAPACITY_BYTES as u32
-            || data.len() > (CAPACITY_BYTES - offset as usize)
-        {
+        if offset >= CAPACITY_BYTES as u32 || data.len() > (CAPACITY_BYTES - offset as usize) {
             return Err(Error::OutOfBounds);
         }
 
