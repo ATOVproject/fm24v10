@@ -63,10 +63,10 @@ where
     /// # Arguments
     /// * `i2c`: The I2C bus peripheral.
     /// * `address_pins`: The state of the A2 and A1 hardware address pins,
-    ///                   as `Address(a1_pin_state, a2_pin_state)`.
+    ///   as `Address(a1_pin_state, a2_pin_state)`.
     /// * `write_buffer`: A mutable slice provided by the user, used for assembling
-    ///                   I2C write payloads. It must be large enough to hold
-    ///                   `MEMORY_ADDRESS_BYTES` + the largest anticipated data write.
+    ///   I2C write payloads. It must be large enough to hold
+    ///   `MEMORY_ADDRESS_BYTES` + the largest anticipated data write.
     pub fn new(i2c: I2C, address_pins: Address, write_buffer: &'buf mut [u8]) -> Self {
         Self {
             i2c,
@@ -129,9 +129,7 @@ where
         if data.is_empty() {
             return Ok(());
         }
-        if offset >= CAPACITY_BYTES as u32
-            || data.len() > (CAPACITY_BYTES - offset as usize)
-        {
+        if offset >= CAPACITY_BYTES as u32 || data.len() > (CAPACITY_BYTES - offset as usize) {
             return Err(Error::OutOfBounds);
         }
 
